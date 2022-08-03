@@ -7,4 +7,31 @@
 
     <context:component-scan base-package="org.example"/>
 
+    <bean id="student" class="org.example.Student">
+        <property name="id" value="00001"/>
+        <property name="name" value="Java Annotations"/>
+        <property name="ph">
+            <list>
+                <ref bean="ph0"/>
+                <ref bean="ph1"/>
+            </list>
+        </property>
+        <property name="add" ref="address"/>
+    </bean>
+
+    <bean id="ph0" class="org.example.Phone">
+        <property name="mob" value="502-001-0001"/>
+    </bean>
+
+    <bean id="ph1" class="org.example.Phone">
+        <property name="mob" value="502-001-0002"/>
+    </bean>
+
+    <bean id="address" class="org.example.Address">
+        <property name="city" value="LOU"/>
+        <property name="state" value="KY"/>
+        <property name="country" value="USA"/>
+        <property name="zipcode" value="40100"/>
+    </bean>
+
 </beans>

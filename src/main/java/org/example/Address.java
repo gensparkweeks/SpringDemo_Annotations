@@ -10,21 +10,6 @@ public class Address {
     private String country;
     private String zipcode;
 
-    //Constructors
-    public Address() {
-        this.city = "LOU";
-        this.state = "KY";
-        this.country = "USA";
-        this.zipcode = "40100";
-    }
-
-    public Address(String city, String state, String country, String zipcode) {
-        this.city = city;
-        this.state = state;
-        this.country = country;
-        this.zipcode = zipcode;
-    }
-
     //Setters
     public void setCity(String city) {
         this.city = city;
