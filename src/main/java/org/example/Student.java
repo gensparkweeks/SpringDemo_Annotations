@@ -7,7 +7,6 @@ import java.util.List;
 
 @Component
 public class Student{
-
     private int id;
     private String name;
     @Autowired
